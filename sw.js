@@ -5,9 +5,9 @@ self.addEventListener('install', event => {
   event.waitUntil(
     caches.open(CACHE_NAME + CACHE_VERSION.toString()).then(function(cache) {
       return cache.addAll([
-        'index.ejs',
+        'index.html',
         'sw.js',
-        './index.js',
+        
       ]);
     })
   );
